@@ -1,0 +1,63 @@
+package Atividade;
+
+public class Questao3 {
+    public static void main(String[] args) {
+    	
+    	// Sequencia A
+    	int nA = 1;
+    	System.out.print("Sequencia A: " + nA + ", ");
+    	for (int i = 2; i <= 5; i++) {
+    		nA += 2;
+    	    System.out.print(nA + ", ");
+    	}
+    	System.out.println("...");
+
+    	// Sequencia B
+    	int nB = 2;
+    	System.out.print("Sequencia B: "+ nB+ ", ");
+    	for (int i = 3; i <= 8; i++) {
+    	    nB *= 2;
+    	    System.out.print(nB + ", ");
+    	}
+    	System.out.println("...");
+
+    	//Sequecia C
+    	int nC = 0;
+    	int nextC = (nC+1)*(nC+1);
+    	System.out.print("Sequecia C: " + nC + ", " + (nC+1) + ", ");
+    	for (int i = 2; i <= 7; i++) {
+    	    nC = nC + 1;
+    	    nextC = (nC+1)*(nC+1);
+    	    System.out.print(nextC + ", ");
+    	}
+    	System.out.println("...");
+    	
+    	//Sequecia D
+    	int nD = 2;
+    	int nextD = 4;
+    	System.out.print("Sequecia D: " + nextD + ", ");
+    	for (int i = 3; i <= 6; i++) {
+    	    nD += 2;
+    	    nextD = nD*nD;
+    	    System.out.print(nextD + ", ");
+    	}
+    	System.out.println("...");
+
+    	//Sequencia E 
+    	int n1E = 1, n2E = 1, nextE = 0;
+    	System.out.print("Sequencia E : " + n1E + ", " + n2E + ", ");
+    	for (int i = 3; i <= 7; i++) {
+    	    nextE = n1E + n2E;
+    	    System.out.print(nextE + ", ");
+    	    n1E = n2E;
+    	    n2E = nextE;
+    	}
+    	System.out.println("...");
+        
+        
+    }
+    
+    
+    
+}
+

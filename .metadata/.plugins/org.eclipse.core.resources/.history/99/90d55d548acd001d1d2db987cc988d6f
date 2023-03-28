@@ -1,0 +1,40 @@
+package Atividade;
+
+public class Questao3 {
+    public static void main(String[] args) {
+    	
+    	//Sequencia A
+        int a = 1;
+        int next = a + 2;
+        System.out.print(a + ", " + (a+2) + ", ");
+        for (int i = 3; i <= 5; i++) {
+            a = next;
+            next = a + 2;
+            System.out.print(next + ", ");
+        }
+        System.out.println("...\n");
+        
+        
+        
+        
+        
+        //Sequecia C
+        
+        int n = 0;
+        int next1 = (n+1)*(n+1);
+        System.out.print(n + ", " + (n+1) + ", ");
+        for (int i = 2; i <= 7; i++) {
+            n = n + 1;
+            next1 = (n+1)*(n+1);
+            System.out.print(next1 + ", ");
+        }
+        System.out.println("...");
+        
+        
+        
+    }
+    
+    
+    
+}
+

@@ -1,0 +1,25 @@
+package Atividade;
+
+public class Questao4 {
+	
+	int distance = 100;
+	int speedCar = 110;
+	int speedTruck = 80;
+
+	double distanceTruckToToll1 = (double) distance / 2;
+	double distanceTruckToToll2 = distance - distanceTruckToToll1;
+	double timeTruckToToll1 = (distanceTruckToToll1 / speedTruck) + 5 / 60.0;
+	double timeTruckToToll2 = (distanceTruckToToll2 / speedTruck) + 5 / 60.0;
+	double totalTimeTruck = (distance / speedTruck) + timeTruckToToll1 
+			+ timeTruckToToll2;
+	double distanceCar = speedCar * totalTimeTruck;
+
+	if (distanceCar < distanceTruckToToll1) {
+	System.out.println("O carro está mais próximo de Ribeirão Preto.");
+	} else if (distanceCar > distanceTruckToToll2) {
+	System.out.println("O caminhão está mais próximo de Ribeirão Preto.");
+	} else {
+	System.out.println("O carro e o caminhão estão equidistantes de Ribeirão Preto.");
+	}
+
+}}

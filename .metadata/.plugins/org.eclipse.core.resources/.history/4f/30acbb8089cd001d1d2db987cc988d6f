@@ -1,0 +1,17 @@
+package Atividade.Questao3;
+
+public class SequenciaA {
+	    public static void main(String[] args) {
+	        int a = 1;
+	        int next = a + 2;
+	        System.out.print(a + ", " + (a+2) + ", ");
+	        for (int i = 3; i <= 5; i++) {
+	            a = next;
+	            next = a + 2;
+	            System.out.print(next + ", ");
+	        }
+	        System.out.println("...");
+	    }
+
+}
+
